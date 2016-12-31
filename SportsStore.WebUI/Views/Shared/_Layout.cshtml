@@ -18,6 +18,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("SPORTS STOR", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.Action("Summary","Cart")
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav"></ul>
@@ -25,7 +26,7 @@
         </div>
     </div>
 
-    <div class="container body-content"> 
+    <div class="container body-content">
 
         <div class="row panel">
             <div id="categories" class="col-xs-3">
@@ -33,11 +34,11 @@
             </div>
             <div class="col-xs-9">
                 @RenderBody()
-                
+
             </div>
             <p>&nbsp;</p>
         </div>
-      
+
     </div>
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
